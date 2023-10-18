@@ -5,6 +5,10 @@ const router = express.Router();
 
 router.post('/', adminUserController.add);
 router.get('/', adminUserController.getAll);
+router.get('/:id', adminUserController.getById);
+router.delete('/:id', adminUserController.deleteById);
+
+
 
 
 
